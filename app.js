@@ -22,7 +22,7 @@ app.get("/api/data", async (req, res) => {
       );
 
       const filteredDepartures = response.data.Departure.filter((departure) => {
-        return departure.name === "Länstrafik -Tunnelbana 14";
+        return departure.direction == "Mörby centrum T-bana (Danderyd kn)";
       });
 
       const mappedDepartures = filteredDepartures.map((departure) => ({
