@@ -1,0 +1,1 @@
+This is a Node.js Express application which uses Trafiklabs open API to fetch data regarding departures from Telefonplan T-bana station in Stockholm, Sweden. The application is deployed on Vercel and can be found here https://slsubway.vercel.app/api/data

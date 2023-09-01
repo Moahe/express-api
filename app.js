@@ -38,6 +38,7 @@ app.get("/api/data", async (req, res) => {
   }
 });
 
+// Start the Express server
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
