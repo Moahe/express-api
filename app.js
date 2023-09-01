@@ -1,10 +1,13 @@
 const express = require("express");
 const axios = require("axios");
 const dotenv = require("dotenv").config();
+const cors = require("cors"); // Import the CORS middleware
 const apiKey = process.env.API_KEY;
 
 const app = express();
 const port = process.env.PORT || 3002;
+
+app.use(cors());
 
 app.get("/", (req, res) => {
   res.send("Hello World!");
